@@ -1,7 +1,9 @@
 package scoreApi
 
+import "time"
+
 type Lesson struct {
 	Id   int        `json:"id"`
-	Date string     `json:"date"`
+	Date time.Time  `json:"date"`
 	Type LessonType `json:"type"`
 }
